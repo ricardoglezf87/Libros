@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetXml" targetNamespace="http://tempuri.org/DataSetXml.xsd" xmlns:mstns="http://tempuri.org/DataSetXml.xsd" xmlns="http://tempuri.org/DataSetXml.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetXml" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSetXml" msprop:Generator_UserDSName="DataSetXml">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Libros" msprop:Generator_UserTableName="Libros" msprop:Generator_RowEvArgName="LibrosRowChangeEvent" msprop:Generator_TableVarName="tableLibros" msprop:Generator_TablePropName="Libros" msprop:Generator_RowDeletingName="LibrosRowDeleting" msprop:Generator_RowChangingName="LibrosRowChanging" msprop:Generator_RowDeletedName="LibrosRowDeleted" msprop:Generator_TableClassName="LibrosDataTable" msprop:Generator_RowChangedName="LibrosRowChanged" msprop:Generator_RowEvHandlerName="LibrosRowChangeEventHandler" msprop:Generator_RowClassName="LibrosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Autor" msprop:Generator_ColumnVarNameInTable="columnAutor" msprop:Generator_ColumnPropNameInRow="Autor" msprop:Generator_ColumnPropNameInTable="AutorColumn" msprop:Generator_UserColumnName="Autor" type="xs:string" minOccurs="0" />
+              <xs:element name="Editorial" msprop:Generator_ColumnVarNameInTable="columnEditorial" msprop:Generator_ColumnPropNameInRow="Editorial" msprop:Generator_ColumnPropNameInTable="EditorialColumn" msprop:Generator_UserColumnName="Editorial" type="xs:string" minOccurs="0" />
+              <xs:element name="Prestado" msprop:Generator_ColumnVarNameInTable="columnPrestado" msprop:Generator_ColumnPropNameInRow="Prestado" msprop:Generator_ColumnPropNameInTable="PrestadoColumn" msprop:Generator_UserColumnName="Prestado" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Persona" msprop:Generator_ColumnVarNameInTable="columnPersona" msprop:Generator_ColumnPropNameInRow="Persona" msprop:Generator_ColumnPropNameInTable="PersonaColumn" msprop:Generator_UserColumnName="Persona" type="xs:string" minOccurs="0" />
+              <xs:element name="Leido" msprop:Generator_ColumnVarNameInTable="columnLeido" msprop:Generator_ColumnPropNameInRow="Leido" msprop:Generator_ColumnPropNameInTable="LeidoColumn" msprop:Generator_UserColumnName="Leido" type="xs:boolean" minOccurs="0" />
+              <xs:element name="esPdf" msprop:Generator_ColumnVarNameInTable="columnesPdf" msprop:Generator_ColumnPropNameInRow="esPdf" msprop:Generator_ColumnPropNameInTable="esPdfColumn" msprop:Generator_UserColumnName="esPdf" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Genero" msprop:Generator_ColumnVarNameInTable="columnGenero" msprop:Generator_ColumnPropNameInRow="Genero" msprop:Generator_ColumnPropNameInTable="GeneroColumn" msprop:Generator_UserColumnName="Genero" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaLeido" msprop:Generator_ColumnVarNameInTable="columnfechaLeido" msprop:Generator_ColumnPropNameInRow="fechaLeido" msprop:Generator_ColumnPropNameInTable="fechaLeidoColumn" msprop:Generator_UserColumnName="fechaLeido" type="xs:string" minOccurs="0" />
+              <xs:element name="Pertenece" msprop:Generator_ColumnVarNameInTable="columnPertenece" msprop:Generator_ColumnPropNameInRow="Pertenece" msprop:Generator_ColumnPropNameInTable="PerteneceColumn" msprop:Generator_UserColumnName="Pertenece" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Libros" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
